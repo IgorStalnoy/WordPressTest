@@ -18,4 +18,13 @@ public class Configuration {
         }
         return properties;
     }
+    public static String getUsername() {
+        return properties.getProperty("username");
+    }
+    public static String getPassword() {
+        return properties.getProperty("password");
+    }
+    public static String getDomain() {
+        return properties.getProperty("domain");
+    }
 }

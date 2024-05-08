@@ -10,9 +10,10 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-import static org.example.buisness.ui.utils.Constants.*;
-
 public class CommentsPage extends AdminPage {
+    public static final By COMMENTS_PAGE_LOCATOR = By.xpath("//h1[contains(text(),'Comments')]");
+    public static final By COMMENTS_TABLE_ELEMENTS_LIST_LOCATOR = By.xpath("//*[@id='the-comment-list']/*");
+    public static final String COMMENTS_TABLE_ELEMENTS_BY_POST_PATTERN = "//*[contains(text(),'%s')]/../../..";
     private final SideMenuSectionsEnum SIDE_MENU_ELEMENT = SideMenuSectionsEnum.COMMENTS;
     public CommentsPage() {
         super(new Header(), new SideMenu());

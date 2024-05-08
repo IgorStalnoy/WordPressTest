@@ -6,9 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static org.example.buisness.ui.utils.Constants.SIDE_MENU_SECTION_PATTERN;
-
 public class SideMenu {
+    public static final String SIDE_MENU_SECTION_PATTERN = "//div[contains(text(),'%s')]";
     private final WebDriver webDriver;
 
     public SideMenu() {

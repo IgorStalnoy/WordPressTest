@@ -10,9 +10,10 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-import static org.example.buisness.ui.utils.Constants.*;
-
 public class PostsPage extends AdminPage {
+    public static final By POSTS_PAGE_LOCATOR = By.xpath("//h1[contains(text(),'Posts')]");
+    public static final By POSTS_TABLE_ELEMENTS_LIST_LOCATOR = By.xpath("//*[@id='the-list']/*");
+    public static final String POSTS_TABLE_ELEMENTS_BY_TITLE_PATTERN = "//*[contains(text(),'%s')]/../../..";
     private final SideMenuSectionsEnum SIDE_MENU_ELEMENT = SideMenuSectionsEnum.POSTS;
 
     public PostsPage() {
