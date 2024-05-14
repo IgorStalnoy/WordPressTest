@@ -27,34 +27,42 @@ public class MainPage extends AdminPage {
 
     @Override
     public boolean isDisplayed() {
+        getLogger().debug("Waiting for the " + this.getClass().getSimpleName() + " to load");
         WaitUtil.waitUntilElementVisible(MAIN_PAGE_LOCATOR);
         return getWebDriver().findElements(MAIN_PAGE_LOCATOR).size() == 1;
     }
 
     @Override
     public void openPage() {
+        getLogger().info("Opening page " + this.getClass().getSimpleName());
         getWebDriver().get(MAIN_URL);
     }
 
     public List<WebElement> getPageElementsList() {
-        return getWebDriver().findElements(MAIN_PAGE_PAGES_LIST_LOCATOR);
+        getLogger().debug("Waiting for the main page pages are displayed");
+        return WaitUtil.getWebElementsAfterFluentWait(MAIN_PAGE_PAGES_LIST_LOCATOR);
     }
 
     public void openPageByName(String pageName) {
         By elementLocator = By.xpath(String.format(MAIN_PAGE_PAGES_PATTERN, pageName));
+        getLogger().debug("Waiting for the " + pageName + " is displayed");
         WaitUtil.waitUntilElementVisible(elementLocator);
         WebElement page = getWebDriver().findElement(elementLocator);
+        getLogger().info("Clicking on the " + pageName + " icon");
         page.click();
     }
 
     public List<WebElement> getPostsElementsList() {
-        return getWebDriver().findElements(MAIN_PAGE_POSTS_LIST_LOCATOR);
+        getLogger().debug("Waiting for the main page posts are displayed");
+        return WaitUtil.getWebElementsAfterFluentWait(MAIN_PAGE_POSTS_LIST_LOCATOR);
     }
 
     public void openPostByName(String pageName) {
         By elementLocator = By.xpath(String.format(MAIN_PAGE_POSTS_PATTERN, pageName));
+        getLogger().debug("Waiting for the " + pageName + " is displayed");
         WaitUtil.waitUntilElementVisible(elementLocator);
         WebElement page = getWebDriver().findElement(elementLocator);
+        getLogger().info("Clicking on the " + pageName + " icon");
         page.click();
     }
 

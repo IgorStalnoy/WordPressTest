@@ -20,12 +20,14 @@ public class CommentsPage extends AdminPage {
     }
     @Override
     public boolean isDisplayed() {
+        getLogger().debug("Waiting for the " + this.getClass().getSimpleName() + " to load");
         WaitUtil.waitUntilElementVisible(COMMENTS_PAGE_LOCATOR);
         return getWebDriver().findElements(COMMENTS_PAGE_LOCATOR).size() == 1;
     }
 
     @Override
     public void openPage() {
+        getLogger().info("Opening page " + SIDE_MENU_ELEMENT.getValue());
         sideMenu().openPage(SIDE_MENU_ELEMENT);
     }
 
@@ -34,12 +36,15 @@ public class CommentsPage extends AdminPage {
     }
 
     public List<WebElement> getTableElementsList() {
+        getLogger().info("Get " + this.getClass().getSimpleName() + " table elements");
         return getWebDriver().findElements(COMMENTS_TABLE_ELEMENTS_LIST_LOCATOR);
     }
     public WebElement getLastTableElement() {
+        getLogger().info("Get " + this.getClass().getSimpleName() + " table last element");
         return getTableElementsList().get(0);
     }
     public List<WebElement> getTableElementsByPostTitle(String titleName) {
+        getLogger().info("Get " + this.getClass().getSimpleName() + " table elements by title");
         return getWebDriver().findElements(By.xpath(String.format(COMMENTS_TABLE_ELEMENTS_BY_POST_PATTERN,titleName)));
     }
 }

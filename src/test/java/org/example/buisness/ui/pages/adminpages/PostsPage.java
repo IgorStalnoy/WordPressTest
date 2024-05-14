@@ -22,12 +22,14 @@ public class PostsPage extends AdminPage {
 
     @Override
     public boolean isDisplayed() {
+        getLogger().debug("Waiting for the " + this.getClass().getSimpleName() + " to load");
         WaitUtil.waitUntilElementVisible(POSTS_PAGE_LOCATOR);
         return getWebDriver().findElements(POSTS_PAGE_LOCATOR).size() == 1;
     }
 
     @Override
     public void openPage() {
+        getLogger().info("Opening page " + SIDE_MENU_ELEMENT.getValue());
         sideMenu().openPage(SIDE_MENU_ELEMENT);
     }
 
@@ -36,14 +38,17 @@ public class PostsPage extends AdminPage {
     }
 
     public List<WebElement> getTableElementsList() {
+        getLogger().info("Get " + this.getClass().getSimpleName() + " table elements");
         return getWebDriver().findElements(POSTS_TABLE_ELEMENTS_LIST_LOCATOR);
     }
 
     public WebElement getLastTableElement() {
+        getLogger().info("Get " + this.getClass().getSimpleName() + " table last element");
         return getTableElementsList().get(0);
     }
 
     public List<WebElement> getTableElementsByTitle(String titleName) {
+        getLogger().info("Get " + this.getClass().getSimpleName() + " table elements by title");
         return getWebDriver().findElements(By.xpath(String.format(POSTS_TABLE_ELEMENTS_BY_TITLE_PATTERN, titleName)));
     }
 

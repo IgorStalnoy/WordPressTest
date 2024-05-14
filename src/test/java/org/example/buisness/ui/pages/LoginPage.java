@@ -4,6 +4,9 @@ import org.example.buisness.ui.pages.adminpages.DashboardPage;
 import org.example.buisness.ui.utils.Configuration;
 import org.example.buisness.ui.utils.WaitUtil;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 import static org.example.buisness.ui.elements.Header.HEADER_LOGGED_IN_LOCATOR;
 import static org.example.buisness.ui.utils.Constants.MAIN_URL;
@@ -23,23 +26,29 @@ public class LoginPage extends Page {
 
     @Override
     public boolean isDisplayed() {
+        getLogger().debug("Waiting for the " + this.getClass().getSimpleName() + " to load");
         WaitUtil.waitUntilElementVisible(LOGIN_PAGE_LOCATOR);
         return getWebDriver().findElements(LOGIN_PAGE_LOCATOR).size() == 1;
     }
 
     @Override
     public void openPage() {
+        getLogger().info("Opening page " + this.getClass().getSimpleName());
         getWebDriver().get(LOGIN_PAGE_URL);
     }
 
     private void clickOnLoginButton() {
+        getLogger().debug("Waiting for the login button to load");
         WaitUtil.waitUntilElementVisible(LOGIN_PAGE_LOG_IN_BUTTON_LOCATOR);
+        getLogger().info("Clicking on the login button");
         getWebDriver().findElement(LOGIN_PAGE_LOG_IN_BUTTON_LOCATOR).click();
     }
 
     public void logInWithCredentials(String userName, String password) {
+        getLogger().debug("Waiting for the credential fields loaded");
         WaitUtil.waitUntilElementVisible(LOGIN_PAGE_USERNAME_FIELD_LOCATOR);
         WaitUtil.waitUntilElementVisible(LOGIN_PAGE_PASSWORD_FIELD_LOCATOR);
+        getLogger().info("Fill in the fields with credentials");
         getWebDriver().findElement(LOGIN_PAGE_USERNAME_FIELD_LOCATOR).sendKeys(userName);
         getWebDriver().findElement(LOGIN_PAGE_PASSWORD_FIELD_LOCATOR).sendKeys(password);
         clickOnLoginButton();
@@ -52,7 +61,8 @@ public class LoginPage extends Page {
     }
 
     public boolean isInvalidCredsErrorDisplayed() {
-        WaitUtil.waitUntilElementVisible(LOGIN_PAGE_INVALID_CREDS_ERROR_LOCATOR);
-        return getWebDriver().findElements(LOGIN_PAGE_INVALID_CREDS_ERROR_LOCATOR).size() == 1;
+        getLogger().debug("Waiting for the invalid creds error displayed");
+        List<WebElement> webElementList = WaitUtil.getWebElementsAfterFluentWait(LOGIN_PAGE_INVALID_CREDS_ERROR_LOCATOR);
+        return webElementList.size() == 1;
     }
 }

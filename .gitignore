@@ -1,3 +1,6 @@
 # Project exclude paths
-/target/
+/target/generated-test-sources
+/target/maven-status
+/target/surefire-reports
+/target/test-classes
 /.idea/

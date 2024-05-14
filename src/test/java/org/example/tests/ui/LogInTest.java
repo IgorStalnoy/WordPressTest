@@ -1,6 +1,7 @@
 package org.example.tests.ui;
 
 
+import io.qameta.allure.Description;
 import org.example.buisness.ui.pages.LoginPage;
 import org.example.buisness.ui.pages.adminpages.DashboardPage;
 import org.junit.jupiter.api.AfterEach;
@@ -11,15 +12,17 @@ import org.junit.jupiter.api.Test;
 import static org.example.buisness.ui.pages.LoginPage.*;
 
 public class LogInTest extends BaseTest {
-    LoginPage loginPage;
-    DashboardPage dashboardPage;
+    private LoginPage loginPage;
+    private DashboardPage dashboardPage;
 
     @BeforeEach
     public void initLoginPage() {
         this.loginPage = new LoginPage();
     }
 
+
     @Test
+    @Description("Test verifies the user logged in successful")
     public void testLogInWithValidCredentials() {
         loginPage.openPage();
         loginPage.logInWithCredentials(VALID_USERNAME, VALID_PASSWORD);
@@ -27,6 +30,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Description("Test verifies login page remains after login with invalid credentials")
     public void testLogInWithInvalidCredentials() {
         loginPage.openPage();
         loginPage.logInWithCredentials(INVALID_USERNAME, INVALID_PASSWORD);
@@ -34,6 +38,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Description("Test verifies the error massage appeared opened after login with invalid credentials")
     public void testCheckForErrorMessageLogInWithInvalidCredentials() {
         loginPage.openPage();
         loginPage.logInWithCredentials(INVALID_USERNAME, INVALID_PASSWORD);
@@ -41,6 +46,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Description("Test verifies the dashboard page opened after login")
     public void testUserRedirectedOnDashboardAfterLogIn() {
         loginPage.openPage();
         loginPage.logInWithCredentials(VALID_USERNAME, VALID_PASSWORD);
@@ -49,6 +55,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Description("Test verifies the dashboard page highlighted on side menu after login")
     public void testDashboardPageHighlightedOnSideMenuAfterLogIn() {
         loginPage.openPage();
         loginPage.logInWithCredentials(VALID_USERNAME, VALID_PASSWORD);
@@ -57,6 +64,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Description("Test verifies the login page opened after user logout")
     public void testLoginPageDisplayedAfterLogout() {
         loginPage.openPage();
         loginPage.logInWithCredentials(VALID_USERNAME, VALID_PASSWORD);
@@ -74,4 +82,5 @@ public class LogInTest extends BaseTest {
             this.dashboardPage = null;
         }
     }
+
 }

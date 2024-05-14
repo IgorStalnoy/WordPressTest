@@ -17,12 +17,14 @@ public class DashboardPage extends AdminPage {
 
     @Override
     public boolean isDisplayed() {
+        getLogger().debug("Waiting for the " + this.getClass().getSimpleName() + " to load");
         WaitUtil.waitUntilElementVisible(DASHBOARD_PAGE_LOCATOR);
         return getWebDriver().findElements(DASHBOARD_PAGE_LOCATOR).size() == 1;
     }
 
     @Override
     public void openPage() {
+        getLogger().info("Opening page " + SIDE_MENU_ELEMENT.getValue());
         sideMenu().openPage(SIDE_MENU_ELEMENT);
     }
 
