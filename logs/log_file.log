@@ -1,0 +1,710 @@
+2024-05-14 17:04:39 TRACE Browser:21 - Init browser
+2024-05-14 17:04:39 TRACE Configuration:16 - Init properties
+2024-05-14 17:04:39 ERROR Browser:27 - Driver init error
+2024-05-14 17:04:39 INFO  LogInTest:31 - Test case "testLoginPageDisplayedAfterLogout" finished
+//driver error example
+
+2024-05-14 17:06:04 TRACE Browser:21 - Init browser
+2024-05-14 17:06:04 TRACE Configuration:16 - Init properties
+2024-05-14 17:06:04 ERROR Configuration:20 - Error init properties
+2024-05-14 17:06:04 INFO  LogInTest:31 - Test case "testLoginPageDisplayedAfterLogout" finished
+//init properties error example
+
+2024-05-14 17:06:44 TRACE Browser:21 - Init browser
+2024-05-14 17:06:44 TRACE Configuration:16 - Init properties
+2024-05-14 17:06:47 INFO  LogInTest:23 - Starting test case "testLoginPageDisplayedAfterLogout"
+2024-05-14 17:06:47 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 17:06:47 INFO  LoginPage:37 - Opening page LoginPage
+2024-05-14 17:06:50 DEBUG LoginPage:49 - Waiting for the credential fields loaded
+2024-05-14 17:06:50 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:06:50 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:06:50 INFO  LoginPage:52 - Fill in the fields with credentials
+2024-05-14 17:06:51 DEBUG LoginPage:42 - Waiting for the login button to load
+2024-05-14 17:06:51 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:06:51 INFO  LoginPage:44 - Clicking on the login button
+2024-05-14 17:06:55 TRACE DashboardPage:14 - Init elements of the page
+2024-05-14 17:06:55 DEBUG Header:20 - Wait for the user profile icon is displayed
+2024-05-14 17:06:55 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:06:56 DEBUG Header:25 - Wait for the log out button is displayed
+2024-05-14 17:06:56 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:06:56 INFO  Header:28 - Clicking on the log out button
+2024-05-14 17:06:59 DEBUG Header:30 - Wait for the login page is opened
+2024-05-14 17:06:59 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:06:59 DEBUG LoginPage:30 - Waiting for the LoginPage to load
+2024-05-14 17:06:59 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:00 INFO  LogInTest:31 - Test case "testLoginPageDisplayedAfterLogout" finished
+
+2024-05-14 17:07:01 TRACE Browser:21 - Init browser
+2024-05-14 17:07:02 INFO  LogInTest:23 - Starting test case "testUserRedirectedOnDashboardAfterLogIn"
+2024-05-14 17:07:02 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 17:07:02 INFO  LoginPage:37 - Opening page LoginPage
+2024-05-14 17:07:06 DEBUG LoginPage:49 - Waiting for the credential fields loaded
+2024-05-14 17:07:06 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:06 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:06 INFO  LoginPage:52 - Fill in the fields with credentials
+2024-05-14 17:07:07 DEBUG LoginPage:42 - Waiting for the login button to load
+2024-05-14 17:07:07 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:07 INFO  LoginPage:44 - Clicking on the login button
+2024-05-14 17:07:14 TRACE DashboardPage:14 - Init elements of the page
+2024-05-14 17:07:14 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-14 17:07:14 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:15 INFO  LogInTest:31 - Test case "testUserRedirectedOnDashboardAfterLogIn" finished
+
+2024-05-14 17:07:15 TRACE Browser:21 - Init browser
+2024-05-14 17:07:16 INFO  LogInTest:23 - Starting test case "testLogInWithValidCredentials"
+2024-05-14 17:07:16 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 17:07:16 INFO  LoginPage:37 - Opening page LoginPage
+2024-05-14 17:07:19 DEBUG LoginPage:49 - Waiting for the credential fields loaded
+2024-05-14 17:07:19 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:19 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:19 INFO  LoginPage:52 - Fill in the fields with credentials
+2024-05-14 17:07:19 DEBUG LoginPage:42 - Waiting for the login button to load
+2024-05-14 17:07:19 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:19 INFO  LoginPage:44 - Clicking on the login button
+2024-05-14 17:07:26 TRACE DashboardPage:14 - Init elements of the page
+2024-05-14 17:07:26 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-14 17:07:26 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:26 INFO  LogInTest:31 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-14 17:07:26 TRACE Browser:21 - Init browser
+2024-05-14 17:07:28 INFO  LogInTest:23 - Starting test case "testLogInWithInvalidCredentials"
+2024-05-14 17:07:28 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 17:07:28 INFO  LoginPage:37 - Opening page LoginPage
+2024-05-14 17:07:31 DEBUG LoginPage:49 - Waiting for the credential fields loaded
+2024-05-14 17:07:31 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:31 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:31 INFO  LoginPage:52 - Fill in the fields with credentials
+2024-05-14 17:07:31 DEBUG LoginPage:42 - Waiting for the login button to load
+2024-05-14 17:07:31 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:31 INFO  LoginPage:44 - Clicking on the login button
+2024-05-14 17:07:32 DEBUG LoginPage:30 - Waiting for the LoginPage to load
+2024-05-14 17:07:32 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:32 INFO  LogInTest:31 - Test case "testLogInWithInvalidCredentials" finished
+
+2024-05-14 17:07:32 TRACE Browser:21 - Init browser
+2024-05-14 17:07:33 INFO  LogInTest:23 - Starting test case "testDashboardPageHighlightedOnSideMenuAfterLogIn"
+2024-05-14 17:07:33 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 17:07:33 INFO  LoginPage:37 - Opening page LoginPage
+2024-05-14 17:07:36 DEBUG LoginPage:49 - Waiting for the credential fields loaded
+2024-05-14 17:07:36 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:36 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:36 INFO  LoginPage:52 - Fill in the fields with credentials
+2024-05-14 17:07:36 DEBUG LoginPage:42 - Waiting for the login button to load
+2024-05-14 17:07:36 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:36 INFO  LoginPage:44 - Clicking on the login button
+2024-05-14 17:07:42 TRACE DashboardPage:14 - Init elements of the page
+2024-05-14 17:07:42 DEBUG SideMenu:19 - Waiting for the side menu highlighted button to load
+2024-05-14 17:07:42 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:42 INFO  LogInTest:31 - Test case "testDashboardPageHighlightedOnSideMenuAfterLogIn" finished
+
+2024-05-14 17:07:42 TRACE Browser:21 - Init browser
+2024-05-14 17:07:44 INFO  LogInTest:23 - Starting test case "testCheckForErrorMessageLogInWithInvalidCredentials"
+2024-05-14 17:07:44 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 17:07:44 INFO  LoginPage:37 - Opening page LoginPage
+2024-05-14 17:07:46 DEBUG LoginPage:49 - Waiting for the credential fields loaded
+2024-05-14 17:07:47 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:47 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:47 INFO  LoginPage:52 - Fill in the fields with credentials
+2024-05-14 17:07:47 DEBUG LoginPage:42 - Waiting for the login button to load
+2024-05-14 17:07:48 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 17:07:48 INFO  LoginPage:44 - Clicking on the login button
+2024-05-14 17:07:48 DEBUG LoginPage:65 - Waiting for the invalid creds error displayed
+2024-05-14 17:07:48 TRACE WaitUtil:38 - Expected element was found
+2024-05-14 17:07:49 INFO  LogInTest:31 - Test case "testCheckForErrorMessageLogInWithInvalidCredentials" finished
+
+2024-05-14 18:33:47 TRACE Browser:21 - Init browser
+2024-05-14 18:33:47 TRACE Configuration:16 - Init properties
+2024-05-14 18:33:52 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-14 18:33:52 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:33:52 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:33:55 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:33:55 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:33:55 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:33:55 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:33:56 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:33:56 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:33:56 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:34:01 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-14 18:38:06 TRACE Browser:21 - Init browser
+2024-05-14 18:38:06 TRACE Configuration:16 - Init properties
+2024-05-14 18:38:09 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-14 18:38:09 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:38:09 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:38:12 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:38:12 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:38:12 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:38:12 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:38:12 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:38:17 WARN  WaitUtil:27 - Expected element was not found
+2024-05-14 18:38:17 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:38:23 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-14 18:40:28 TRACE Browser:21 - Init browser
+2024-05-14 18:40:28 TRACE Configuration:16 - Init properties
+2024-05-14 18:40:31 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-14 18:40:31 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:40:31 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:40:34 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:40:34 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:40:34 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:40:34 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:40:34 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:40:34 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:40:34 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:40:39 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-14 18:43:47 TRACE Browser:21 - Init browser
+2024-05-14 18:43:47 TRACE Configuration:16 - Init properties
+2024-05-14 18:43:50 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-14 18:43:50 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:43:50 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:43:54 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:43:54 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:43:54 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:43:54 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:43:54 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:43:54 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:43:54 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:43:59 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-14 18:44:55 TRACE Browser:21 - Init browser
+2024-05-14 18:44:55 TRACE Configuration:16 - Init properties
+2024-05-14 18:44:58 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-14 18:44:58 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:44:58 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:45:01 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:45:01 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:45:01 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:45:01 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:45:01 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:45:01 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:45:01 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:45:06 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-14 18:46:07 TRACE Browser:21 - Init browser
+2024-05-14 18:46:07 TRACE Configuration:16 - Init properties
+2024-05-14 18:46:10 INFO  LogInTest:24 - Starting test case "testLoginPageDisplayedAfterLogout"
+2024-05-14 18:46:10 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:46:10 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:46:13 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:46:13 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:13 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:13 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:46:14 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:46:14 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:14 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:46:18 TRACE DashboardPage:14 - Init elements of the page
+2024-05-14 18:46:18 DEBUG Header:20 - Wait for the user profile icon is displayed
+2024-05-14 18:46:18 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:18 DEBUG Header:25 - Wait for the log out button is displayed
+2024-05-14 18:46:18 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:18 INFO  Header:28 - Clicking on the log out button
+2024-05-14 18:46:20 DEBUG Header:30 - Wait for the login page is opened
+2024-05-14 18:46:20 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:20 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-14 18:46:20 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:21 INFO  LogInTest:32 - Test case "testLoginPageDisplayedAfterLogout" finished
+
+2024-05-14 18:46:21 TRACE Browser:21 - Init browser
+2024-05-14 18:46:23 INFO  LogInTest:24 - Starting test case "testUserRedirectedOnDashboardAfterLogIn"
+2024-05-14 18:46:23 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:46:23 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:46:25 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:46:25 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:25 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:25 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:46:25 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:46:25 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:25 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:46:29 TRACE DashboardPage:14 - Init elements of the page
+2024-05-14 18:46:29 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-14 18:46:29 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:29 INFO  LogInTest:32 - Test case "testUserRedirectedOnDashboardAfterLogIn" finished
+
+2024-05-14 18:46:29 TRACE Browser:21 - Init browser
+2024-05-14 18:46:31 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-14 18:46:31 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:46:31 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:46:34 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:46:34 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:34 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:34 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:46:34 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:46:34 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:34 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:46:38 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-14 18:46:38 TRACE Browser:21 - Init browser
+2024-05-14 18:46:40 INFO  LogInTest:24 - Starting test case "testLogInWithInvalidCredentials"
+2024-05-14 18:46:40 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:46:40 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:46:43 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:46:43 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:43 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:43 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:46:43 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:46:43 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:43 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:46:44 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-14 18:46:44 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:44 INFO  LogInTest:32 - Test case "testLogInWithInvalidCredentials" finished
+
+2024-05-14 18:46:44 TRACE Browser:21 - Init browser
+2024-05-14 18:46:45 INFO  LogInTest:24 - Starting test case "testDashboardPageHighlightedOnSideMenuAfterLogIn"
+2024-05-14 18:46:45 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:46:45 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:46:49 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:46:49 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:49 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:49 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:46:49 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:46:49 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:49 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:46:53 TRACE DashboardPage:14 - Init elements of the page
+2024-05-14 18:46:53 DEBUG SideMenu:19 - Waiting for the side menu highlighted button to load
+2024-05-14 18:46:53 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:53 INFO  LogInTest:32 - Test case "testDashboardPageHighlightedOnSideMenuAfterLogIn" finished
+
+2024-05-14 18:46:53 TRACE Browser:21 - Init browser
+2024-05-14 18:46:55 INFO  LogInTest:24 - Starting test case "testCheckForErrorMessageLogInWithInvalidCredentials"
+2024-05-14 18:46:55 TRACE LoginPage:14 - Init elements of the page
+2024-05-14 18:46:55 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-14 18:46:58 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-14 18:46:58 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:58 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:58 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-14 18:46:58 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-14 18:46:58 TRACE WaitUtil:25 - Expected element was found
+2024-05-14 18:46:58 INFO  LoginPage:43 - Clicking on the login button
+2024-05-14 18:46:59 DEBUG LoginPage:64 - Waiting for the invalid creds error displayed
+2024-05-14 18:46:59 TRACE WaitUtil:38 - Expected element was found
+2024-05-14 18:46:59 INFO  LogInTest:32 - Test case "testCheckForErrorMessageLogInWithInvalidCredentials" finished
+
+2024-05-28 22:10:14 TRACE Browser:21 - Init browser
+2024-05-28 22:10:14 TRACE Configuration:16 - Init properties
+2024-05-28 22:10:17 INFO  LogInTest:32 - Test case "testLoginPageDisplayedAfterLogout" finished
+
+2024-05-28 22:10:18 TRACE Browser:21 - Init browser
+2024-05-28 22:10:20 INFO  LogInTest:32 - Test case "testUserRedirectedOnDashboardAfterLogIn" finished
+
+2024-05-28 22:10:20 TRACE Browser:21 - Init browser
+2024-05-28 22:10:22 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-28 22:10:22 TRACE Browser:21 - Init browser
+2024-05-28 22:10:25 INFO  LogInTest:32 - Test case "testLogInWithInvalidCredentials" finished
+
+2024-05-28 22:10:25 TRACE Browser:21 - Init browser
+2024-05-28 22:10:27 INFO  LogInTest:32 - Test case "testDashboardPageHighlightedOnSideMenuAfterLogIn" finished
+
+2024-05-28 22:10:27 TRACE Browser:21 - Init browser
+2024-05-28 22:10:28 INFO  LogInTest:32 - Test case "testCheckForErrorMessageLogInWithInvalidCredentials" finished
+
+2024-05-28 22:30:00 TRACE Browser:21 - Init browser
+2024-05-28 22:30:00 TRACE Configuration:16 - Init properties
+2024-05-28 22:30:05 INFO  LogInTest:24 - Starting test case "testLoginPageDisplayedAfterLogout"
+2024-05-28 22:30:05 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:30:05 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:30:08 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:30:08 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:08 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:08 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:30:08 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:30:08 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:08 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:30:13 TRACE DashboardPage:14 - Init elements of the page
+2024-05-28 22:30:14 DEBUG Header:20 - Wait for the user profile icon is displayed
+2024-05-28 22:30:14 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:14 DEBUG Header:25 - Wait for the log out button is displayed
+2024-05-28 22:30:14 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:14 INFO  Header:28 - Clicking on the log out button
+2024-05-28 22:30:15 DEBUG Header:30 - Wait for the login page is opened
+2024-05-28 22:30:20 WARN  WaitUtil:27 - Expected element was not found
+2024-05-28 22:30:20 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-28 22:30:25 WARN  WaitUtil:27 - Expected element was not found
+2024-05-28 22:30:31 INFO  LogInTest:32 - Test case "testLoginPageDisplayedAfterLogout" finished
+
+2024-05-28 22:30:31 TRACE Browser:21 - Init browser
+2024-05-28 22:30:32 INFO  LogInTest:24 - Starting test case "testUserRedirectedOnDashboardAfterLogIn"
+2024-05-28 22:30:32 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:30:32 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:30:35 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:30:35 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:35 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:35 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:30:35 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:30:35 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:35 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:30:40 TRACE DashboardPage:14 - Init elements of the page
+2024-05-28 22:30:40 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-28 22:30:40 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:40 INFO  LogInTest:32 - Test case "testUserRedirectedOnDashboardAfterLogIn" finished
+
+2024-05-28 22:30:40 TRACE Browser:21 - Init browser
+2024-05-28 22:30:42 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-28 22:30:42 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:30:42 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:30:45 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:30:45 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:45 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:45 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:30:45 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:30:45 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:45 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:30:52 TRACE DashboardPage:14 - Init elements of the page
+2024-05-28 22:30:52 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-28 22:30:52 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:52 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-28 22:30:52 TRACE Browser:21 - Init browser
+2024-05-28 22:30:54 INFO  LogInTest:24 - Starting test case "testLogInWithInvalidCredentials"
+2024-05-28 22:30:54 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:30:54 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:30:58 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:30:58 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:58 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:58 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:30:58 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:30:58 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:58 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:30:59 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-28 22:30:59 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:30:59 INFO  LogInTest:32 - Test case "testLogInWithInvalidCredentials" finished
+
+2024-05-28 22:30:59 TRACE Browser:21 - Init browser
+2024-05-28 22:31:01 INFO  LogInTest:24 - Starting test case "testDashboardPageHighlightedOnSideMenuAfterLogIn"
+2024-05-28 22:31:01 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:31:01 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:31:03 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:31:04 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:31:04 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:31:04 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:31:04 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:31:04 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:31:04 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:31:11 TRACE DashboardPage:14 - Init elements of the page
+2024-05-28 22:31:11 DEBUG SideMenu:19 - Waiting for the side menu highlighted button to load
+2024-05-28 22:31:11 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:31:11 INFO  LogInTest:32 - Test case "testDashboardPageHighlightedOnSideMenuAfterLogIn" finished
+
+2024-05-28 22:31:11 TRACE Browser:21 - Init browser
+2024-05-28 22:31:13 INFO  LogInTest:24 - Starting test case "testCheckForErrorMessageLogInWithInvalidCredentials"
+2024-05-28 22:31:13 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:31:13 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:31:16 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:31:17 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:31:17 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:31:17 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:31:18 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:31:18 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:31:18 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:31:18 DEBUG LoginPage:64 - Waiting for the invalid creds error displayed
+2024-05-28 22:31:18 TRACE WaitUtil:38 - Expected element was found
+2024-05-28 22:31:19 INFO  LogInTest:32 - Test case "testCheckForErrorMessageLogInWithInvalidCredentials" finished
+
+2024-05-28 22:57:41 TRACE Browser:21 - Init browser
+2024-05-28 22:57:41 TRACE Configuration:16 - Init properties
+2024-05-28 22:57:45 INFO  LogInTest:24 - Starting test case "testLoginPageDisplayedAfterLogout"
+2024-05-28 22:57:45 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:57:45 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:57:48 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:57:48 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:57:48 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:57:48 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:57:48 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:57:48 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:57:48 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:57:55 TRACE DashboardPage:14 - Init elements of the page
+2024-05-28 22:57:55 DEBUG Header:20 - Wait for the user profile icon is displayed
+2024-05-28 22:57:55 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:57:56 DEBUG Header:25 - Wait for the log out button is displayed
+2024-05-28 22:57:56 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:57:56 INFO  Header:28 - Clicking on the log out button
+2024-05-28 22:58:00 DEBUG Header:30 - Wait for the login page is opened
+2024-05-28 22:58:00 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:00 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-28 22:58:00 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:01 INFO  LogInTest:32 - Test case "testLoginPageDisplayedAfterLogout" finished
+
+2024-05-28 22:58:01 TRACE Browser:21 - Init browser
+2024-05-28 22:58:02 INFO  LogInTest:24 - Starting test case "testUserRedirectedOnDashboardAfterLogIn"
+2024-05-28 22:58:02 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:58:02 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:58:05 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:58:06 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:06 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:06 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:58:06 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:58:06 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:06 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:58:11 TRACE DashboardPage:14 - Init elements of the page
+2024-05-28 22:58:11 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-28 22:58:11 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:11 INFO  LogInTest:32 - Test case "testUserRedirectedOnDashboardAfterLogIn" finished
+
+2024-05-28 22:58:11 TRACE Browser:21 - Init browser
+2024-05-28 22:58:13 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-28 22:58:13 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:58:13 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:58:16 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:58:16 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:16 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:16 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:58:16 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:58:16 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:16 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:58:20 TRACE DashboardPage:14 - Init elements of the page
+2024-05-28 22:58:20 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-28 22:58:20 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:20 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-28 22:58:20 TRACE Browser:21 - Init browser
+2024-05-28 22:58:21 INFO  LogInTest:24 - Starting test case "testLogInWithInvalidCredentials"
+2024-05-28 22:58:21 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:58:21 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:58:24 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:58:24 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:24 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:24 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:58:24 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:58:24 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:24 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:58:25 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-28 22:58:25 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:25 INFO  LogInTest:32 - Test case "testLogInWithInvalidCredentials" finished
+
+2024-05-28 22:58:25 TRACE Browser:21 - Init browser
+2024-05-28 22:58:26 INFO  LogInTest:24 - Starting test case "testDashboardPageHighlightedOnSideMenuAfterLogIn"
+2024-05-28 22:58:26 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:58:26 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:58:28 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:58:29 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:29 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:29 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:58:29 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:58:29 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:29 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:58:33 TRACE DashboardPage:14 - Init elements of the page
+2024-05-28 22:58:33 DEBUG SideMenu:19 - Waiting for the side menu highlighted button to load
+2024-05-28 22:58:33 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:34 INFO  LogInTest:32 - Test case "testDashboardPageHighlightedOnSideMenuAfterLogIn" finished
+
+2024-05-28 22:58:34 TRACE Browser:21 - Init browser
+2024-05-28 22:58:35 INFO  LogInTest:24 - Starting test case "testCheckForErrorMessageLogInWithInvalidCredentials"
+2024-05-28 22:58:35 TRACE LoginPage:14 - Init elements of the page
+2024-05-28 22:58:35 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-28 22:58:38 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-28 22:58:38 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:38 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:38 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-28 22:58:38 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-28 22:58:38 TRACE WaitUtil:25 - Expected element was found
+2024-05-28 22:58:38 INFO  LoginPage:43 - Clicking on the login button
+2024-05-28 22:58:39 DEBUG LoginPage:64 - Waiting for the invalid creds error displayed
+2024-05-28 22:58:39 TRACE WaitUtil:38 - Expected element was found
+2024-05-28 22:58:39 INFO  LogInTest:32 - Test case "testCheckForErrorMessageLogInWithInvalidCredentials" finished
+
+2024-05-29 11:10:51 TRACE Browser:21 - Init browser
+2024-05-29 11:10:51 TRACE Configuration:16 - Init properties
+2024-05-29 11:10:56 INFO  LogInTest:24 - Starting test case "testLoginPageDisplayedAfterLogout"
+2024-05-29 11:10:56 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 11:10:56 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 11:10:59 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 11:10:59 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:10:59 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:10:59 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 11:10:59 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 11:10:59 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:10:59 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 11:11:33 TRACE DashboardPage:14 - Init elements of the page
+2024-05-29 11:11:33 DEBUG Header:20 - Wait for the user profile icon is displayed
+2024-05-29 11:11:33 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:11:33 DEBUG Header:25 - Wait for the log out button is displayed
+2024-05-29 11:11:33 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:11:33 INFO  Header:28 - Clicking on the log out button
+2024-05-29 11:11:38 DEBUG Header:30 - Wait for the login page is opened
+2024-05-29 11:11:38 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:11:38 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-29 11:11:38 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:11:38 INFO  LogInTest:32 - Test case "testLoginPageDisplayedAfterLogout" finished
+
+2024-05-29 11:11:38 TRACE Browser:21 - Init browser
+2024-05-29 11:11:39 INFO  LogInTest:24 - Starting test case "testUserRedirectedOnDashboardAfterLogIn"
+2024-05-29 11:11:39 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 11:11:39 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 11:11:45 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 11:11:45 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:11:45 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:11:45 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 11:11:45 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 11:11:45 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:11:45 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 11:11:55 TRACE DashboardPage:14 - Init elements of the page
+2024-05-29 11:11:55 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-29 11:11:55 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:11:55 INFO  LogInTest:32 - Test case "testUserRedirectedOnDashboardAfterLogIn" finished
+
+2024-05-29 11:11:55 TRACE Browser:21 - Init browser
+2024-05-29 11:11:56 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-29 11:11:56 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 11:11:56 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 11:12:07 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 11:12:07 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:07 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:07 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 11:12:07 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 11:12:07 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:07 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 11:12:18 TRACE DashboardPage:14 - Init elements of the page
+2024-05-29 11:12:18 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-29 11:12:18 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:19 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-29 11:12:19 TRACE Browser:21 - Init browser
+2024-05-29 11:12:20 INFO  LogInTest:24 - Starting test case "testLogInWithInvalidCredentials"
+2024-05-29 11:12:20 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 11:12:20 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 11:12:25 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 11:12:26 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:26 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:26 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 11:12:26 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 11:12:27 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:27 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 11:12:27 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-29 11:12:27 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:28 INFO  LogInTest:32 - Test case "testLogInWithInvalidCredentials" finished
+
+2024-05-29 11:12:28 TRACE Browser:21 - Init browser
+2024-05-29 11:12:29 INFO  LogInTest:24 - Starting test case "testDashboardPageHighlightedOnSideMenuAfterLogIn"
+2024-05-29 11:12:29 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 11:12:29 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 11:12:32 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 11:12:32 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:32 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:32 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 11:12:32 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 11:12:32 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:32 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 11:12:50 TRACE DashboardPage:14 - Init elements of the page
+2024-05-29 11:12:50 DEBUG SideMenu:19 - Waiting for the side menu highlighted button to load
+2024-05-29 11:12:50 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:50 INFO  LogInTest:32 - Test case "testDashboardPageHighlightedOnSideMenuAfterLogIn" finished
+
+2024-05-29 11:12:50 TRACE Browser:21 - Init browser
+2024-05-29 11:12:51 INFO  LogInTest:24 - Starting test case "testCheckForErrorMessageLogInWithInvalidCredentials"
+2024-05-29 11:12:51 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 11:12:51 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 11:12:57 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 11:12:57 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:57 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:57 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 11:12:58 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 11:12:58 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 11:12:58 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 11:13:00 DEBUG LoginPage:64 - Waiting for the invalid creds error displayed
+2024-05-29 11:13:00 TRACE WaitUtil:38 - Expected element was found
+2024-05-29 11:13:00 INFO  LogInTest:32 - Test case "testCheckForErrorMessageLogInWithInvalidCredentials" finished
+
+2024-05-29 12:21:15 TRACE Browser:21 - Init browser
+2024-05-29 12:21:15 TRACE Configuration:16 - Init properties
+2024-05-29 12:21:18 INFO  LogInTest:24 - Starting test case "testLoginPageDisplayedAfterLogout"
+2024-05-29 12:21:18 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 12:21:18 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 12:21:22 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 12:21:22 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:22 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:22 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 12:21:22 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 12:21:22 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:22 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 12:21:29 TRACE DashboardPage:14 - Init elements of the page
+2024-05-29 12:21:29 DEBUG Header:20 - Wait for the user profile icon is displayed
+2024-05-29 12:21:29 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:29 DEBUG Header:25 - Wait for the log out button is displayed
+2024-05-29 12:21:29 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:29 INFO  Header:28 - Clicking on the log out button
+2024-05-29 12:21:32 DEBUG Header:30 - Wait for the login page is opened
+2024-05-29 12:21:32 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:32 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-29 12:21:32 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:33 INFO  LogInTest:32 - Test case "testLoginPageDisplayedAfterLogout" finished
+
+2024-05-29 12:21:33 TRACE Browser:21 - Init browser
+2024-05-29 12:21:35 INFO  LogInTest:24 - Starting test case "testUserRedirectedOnDashboardAfterLogIn"
+2024-05-29 12:21:35 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 12:21:35 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 12:21:37 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 12:21:37 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:38 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:38 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 12:21:38 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 12:21:38 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:38 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 12:21:42 TRACE DashboardPage:14 - Init elements of the page
+2024-05-29 12:21:42 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-29 12:21:42 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:42 INFO  LogInTest:32 - Test case "testUserRedirectedOnDashboardAfterLogIn" finished
+
+2024-05-29 12:21:42 TRACE Browser:21 - Init browser
+2024-05-29 12:21:43 INFO  LogInTest:24 - Starting test case "testLogInWithValidCredentials"
+2024-05-29 12:21:43 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 12:21:43 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 12:21:46 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 12:21:46 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:46 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:46 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 12:21:47 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 12:21:47 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:47 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 12:21:51 TRACE DashboardPage:14 - Init elements of the page
+2024-05-29 12:21:51 DEBUG DashboardPage:20 - Waiting for the DashboardPage to load
+2024-05-29 12:21:51 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:51 INFO  LogInTest:32 - Test case "testLogInWithValidCredentials" finished
+
+2024-05-29 12:21:51 TRACE Browser:21 - Init browser
+2024-05-29 12:21:52 INFO  LogInTest:24 - Starting test case "testLogInWithInvalidCredentials"
+2024-05-29 12:21:52 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 12:21:52 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 12:21:56 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 12:21:56 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:56 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:56 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 12:21:56 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 12:21:56 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:56 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 12:21:57 DEBUG LoginPage:29 - Waiting for the LoginPage to load
+2024-05-29 12:21:57 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:21:57 INFO  LogInTest:32 - Test case "testLogInWithInvalidCredentials" finished
+
+2024-05-29 12:21:57 TRACE Browser:21 - Init browser
+2024-05-29 12:21:58 INFO  LogInTest:24 - Starting test case "testDashboardPageHighlightedOnSideMenuAfterLogIn"
+2024-05-29 12:21:58 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 12:21:58 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 12:22:01 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 12:22:01 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:22:01 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:22:01 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 12:22:01 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 12:22:01 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:22:01 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 12:22:06 TRACE DashboardPage:14 - Init elements of the page
+2024-05-29 12:22:06 DEBUG SideMenu:19 - Waiting for the side menu highlighted button to load
+2024-05-29 12:22:06 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:22:06 INFO  LogInTest:32 - Test case "testDashboardPageHighlightedOnSideMenuAfterLogIn" finished
+
+2024-05-29 12:22:06 TRACE Browser:21 - Init browser
+2024-05-29 12:22:07 INFO  LogInTest:24 - Starting test case "testCheckForErrorMessageLogInWithInvalidCredentials"
+2024-05-29 12:22:07 TRACE LoginPage:14 - Init elements of the page
+2024-05-29 12:22:07 INFO  LoginPage:36 - Opening page LoginPage
+2024-05-29 12:22:10 DEBUG LoginPage:48 - Waiting for the credential fields loaded
+2024-05-29 12:22:11 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:22:11 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:22:11 INFO  LoginPage:51 - Fill in the fields with credentials
+2024-05-29 12:22:11 DEBUG LoginPage:41 - Waiting for the login button to load
+2024-05-29 12:22:11 TRACE WaitUtil:25 - Expected element was found
+2024-05-29 12:22:11 INFO  LoginPage:43 - Clicking on the login button
+2024-05-29 12:22:12 DEBUG LoginPage:64 - Waiting for the invalid creds error displayed
+2024-05-29 12:22:12 TRACE WaitUtil:38 - Expected element was found
+2024-05-29 12:22:12 INFO  LogInTest:32 - Test case "testCheckForErrorMessageLogInWithInvalidCredentials" finished
+
