@@ -10,19 +10,25 @@ public class Configuration {
     private static Properties properties;
     private final static Logger logger = Logger.getLogger(Configuration.class.getName());
 
-    public static Properties getProperties() {
+    public static void initProperties() {
         if (properties == null) {
             try {
                 logger.trace("Init properties");
                 properties = new Properties();
-                properties.load(new FileInputStream("project.properties"));
+                properties.load(new FileInputStream("src/test/resources/project.properties"));
             } catch (IOException e) {
                 logger.error("Error init properties");
                 throw new RuntimeException(e);
             }
         }
+    }
+
+    public static Properties getProperties() {
+        initProperties();
         return properties;
     }
+
+
     public static String getUsername() {
         try {
             return properties.getProperty("username");

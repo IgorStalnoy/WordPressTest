@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +13,7 @@ import java.util.Map;
 public class BrowserFactory {
     public static WebDriver createDriver(BrowserTypeEnum browserType) {
         WebDriver webDriver;
+        Configuration.initProperties();
         switch (browserType) {
             case CHROME:
                 ChromeOptions chromeOptions = new ChromeOptions();
@@ -33,25 +33,6 @@ public class BrowserFactory {
         }
         return webDriver;
     }
-//public static WebDriver createDriver(String browserName) {
-//    WebDriver webDriver;
-//    switch (browserName) {
-//        case "CHROME":
-//            ChromeOptions chromeOptions = new ChromeOptions();
-//            if (Configuration.getProperties().getProperty("device").equals(DevicesEnum.MOBILE.getValue())) {
-//                chromeOptions.setExperimentalOption("mobileEmulation", getMobileEmulationPrefs());
-//            }
-//            webDriver = new ChromeDriver(chromeOptions);
-//            break;
-//        case "FIREFOX":
-//            webDriver = new FirefoxDriver();
-//            break;
-//        default:
-//            throw new RuntimeException("Can't create webdriver for " + browserType);
-//    }
-//    return webDriver;
-//}
-
     private static Map<String, Object> getMobileEmulationPrefs() {
         Map<String, Object> mobileEmulation = new HashMap<>();
         mobileEmulation.put("deviceName", "iPhone 14 Pro Max");
