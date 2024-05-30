@@ -19,13 +19,6 @@ public class LogInTest extends BaseTest {
     public void initLoginPage() {
         this.loginPage = new LoginPage();
     }
-
-//    @Test
-//    public void testttt() {
-//        System.out.println(System.getProperty("browser"));
-//        Assertions.assertTrue(true);
-//    }
-
     @Test
     @Description("Test verifies the user logged in successful")
     public void testLogInWithValidCredentials() {
@@ -33,9 +26,6 @@ public class LogInTest extends BaseTest {
         loginPage.logInWithCredentials(VALID_USERNAME, VALID_PASSWORD);
         Assertions.assertTrue(loginPage.isUserLoggedInSuccessful(), "User was not logged in after login with valid credentials");
     }
-
-
-
     @Test
     @Description("Test verifies login page remains after login with invalid credentials")
     public void testLogInWithInvalidCredentials() {

@@ -21,16 +21,8 @@ public class Browser {
         System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
         System.setProperty("webdriver.edge.driver", "src/test/resources/msedgedriver.exe");
         logger.trace("Init browser");
-//        try {
-//            webDriver = BrowserFactory.createDriver(BrowserTypeEnum.valueOf(Configuration.getProperties().getProperty("browser")));
-//            webDriver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_IN_SECONDS, TimeUnit.SECONDS);
-//            webDriver.manage().window().maximize();
-//        } catch (IllegalStateException ex) {
-//            logger.error("Driver init error");
-//            throw ex;
-//        }
         try {
-            webDriver = BrowserFactory.createDriver(BrowserTypeEnum.valueOf(System.getProperty("browser").toUpperCase()));
+            webDriver = BrowserFactory.createDriver(getBrowser());
             webDriver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_IN_SECONDS, TimeUnit.SECONDS);
             webDriver.manage().window().maximize();
         } catch (IllegalStateException ex) {
@@ -54,5 +46,13 @@ public class Browser {
     }
     public static byte[] makeScreenshot() {
         return ((TakesScreenshot) Browser.getDriver()).getScreenshotAs(OutputType.BYTES);
+    }
+
+    private static BrowserTypeEnum getBrowser() {
+        if (System.getProperty("browser") == null) {
+            return BrowserTypeEnum.valueOf(Configuration.getProperties().getProperty("browser"));
+        } else {
+            return BrowserTypeEnum.valueOf(System.getProperty("browser").toUpperCase());
+        }
     }
 }
