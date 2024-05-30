@@ -27,6 +27,14 @@ public class LogInTest extends BaseTest {
         Assertions.assertTrue(loginPage.isUserLoggedInSuccessful(), "User was not logged in after login with valid credentials");
     }
     @Test
+    @Description("Failed test")
+    public void failedTest() {
+        loginPage.openPage();
+        Assertions.assertTrue(false);
+    }
+
+
+    @Test
     @Description("Test verifies login page remains after login with invalid credentials")
     public void testLogInWithInvalidCredentials() {
         loginPage.openPage();
