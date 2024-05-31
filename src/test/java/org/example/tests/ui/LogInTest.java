@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Random;
+
 import static org.example.buisness.ui.pages.LoginPage.*;
 
 public class LogInTest extends BaseTest {
@@ -29,10 +31,11 @@ public class LogInTest extends BaseTest {
     @Test
     @Description("Failed test")
     public void failedTest() {
+        Random rand = new Random();
+        int r = rand.nextInt(11);
         loginPage.openPage();
-        Assertions.assertTrue(false);
+        Assertions.assertTrue(false, "Custom failed test");
     }
-
 
     @Test
     @Description("Test verifies login page remains after login with invalid credentials")

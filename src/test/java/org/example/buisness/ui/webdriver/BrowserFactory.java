@@ -17,7 +17,7 @@ public class BrowserFactory {
         switch (browserType) {
             case CHROME:
                 ChromeOptions chromeOptions = new ChromeOptions();
-                if (Configuration.getProperties().getProperty("device").equals(DevicesEnum.MOBILE.getValue())) {
+                if (getDevice().equals(DevicesEnum.MOBILE)) {
                     chromeOptions.setExperimentalOption("mobileEmulation", getMobileEmulationPrefs());
                 }
                 webDriver = new ChromeDriver(chromeOptions);
@@ -37,5 +37,13 @@ public class BrowserFactory {
         Map<String, Object> mobileEmulation = new HashMap<>();
         mobileEmulation.put("deviceName", "iPhone 14 Pro Max");
         return mobileEmulation;
+    }
+
+    private static DevicesEnum getDevice() {
+        if (System.getProperty("device") == null) {
+            return DevicesEnum.valueOf(Configuration.getProperties().getProperty("device"));
+        } else {
+            return DevicesEnum.valueOf(System.getProperty("device").toUpperCase());
+        }
     }
 }
