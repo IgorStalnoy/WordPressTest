@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import static org.example.buisness.ui.pages.LoginPage.LOGIN_PAGE_LOCATOR;
+import static org.example.buisness.ui.pages.impl.desktop.LoginPageDesktopImpl.LOGIN_PAGE_LOCATOR;
 
 public class Header extends Element {
     public static final By HEADER_LOGGED_IN_LOCATOR = By.xpath("//*[contains(text(),'Howdy, ')]");

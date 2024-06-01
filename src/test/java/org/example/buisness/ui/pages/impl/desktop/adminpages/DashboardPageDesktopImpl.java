@@ -1,17 +1,18 @@
-package org.example.buisness.ui.pages.adminpages;
+package org.example.buisness.ui.pages.impl.desktop.adminpages;
 
 import org.example.buisness.ui.elements.Header;
 import org.example.buisness.ui.elements.SideMenu;
 import org.example.buisness.ui.elements.SideMenuSectionsEnum;
-import org.example.buisness.ui.pages.AdminPage;
+import org.example.buisness.ui.pages.DashboardPage;
+import org.example.buisness.ui.pages.impl.desktop.AdminPageDesktopImpl;
 import org.example.buisness.ui.utils.WaitUtil;
 import org.openqa.selenium.By;
 
-public class DashboardPage extends AdminPage {
+public class DashboardPageDesktopImpl extends AdminPageDesktopImpl implements DashboardPage {
     public static final By DASHBOARD_PAGE_LOCATOR = By.xpath("//h1[contains(text(),'Dashboard')]");
     private final SideMenuSectionsEnum SIDE_MENU_ELEMENT = SideMenuSectionsEnum.DASHBOARD;
 
-    public DashboardPage() {
+    public DashboardPageDesktopImpl() {
         super(new Header(), new SideMenu());
     }
 
@@ -28,7 +29,7 @@ public class DashboardPage extends AdminPage {
         sideMenu().openPage(SIDE_MENU_ELEMENT);
     }
 
-
+    @Override
     public boolean isPageEqualsHighlightedOnSideMenu() {
         return sideMenu().isCurrentPageEqualsHighlightedOnSideMenu(SIDE_MENU_ELEMENT);
     }
