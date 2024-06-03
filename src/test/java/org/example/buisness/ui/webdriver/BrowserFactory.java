@@ -19,6 +19,8 @@ public class BrowserFactory {
     public WebDriver createDriver(BrowserTypeEnum browserType) {
         WebDriver webDriver;
         Configuration.initProperties();
+        initDevice();
+        initBrowser();
         switch (browserType) {
             case CHROME:
                 ChromeOptions chromeOptions = new ChromeOptions();
@@ -54,6 +56,15 @@ public class BrowserFactory {
             return getDeviceFromSystem();
         }
     }
+    private BrowserTypeEnum initBrowser() {
+        if (System.getProperty("browser") == null) {
+            browserType = getBrowserFromConfiguration();
+            return getBrowserFromConfiguration();
+        } else {
+            browserType = getBrowserFromSystem();
+            return getBrowserFromSystem();
+        }
+    }
 
     private DevicesEnum getDeviceFromConfiguration() {
         return DevicesEnum.valueOf(Configuration.getProperties().getProperty("device"));
@@ -62,5 +73,13 @@ public class BrowserFactory {
     private DevicesEnum getDeviceFromSystem() {
         return DevicesEnum.valueOf(System.getProperties().getProperty("device"));
     }
+    private BrowserTypeEnum getBrowserFromConfiguration() {
+        return BrowserTypeEnum.valueOf(Configuration.getProperties().getProperty("browser"));
+    }
+
+    private BrowserTypeEnum getBrowserFromSystem() {
+        return BrowserTypeEnum.valueOf(System.getProperties().getProperty("browser"));
+    }
+
 
 }
