@@ -1,36 +1,20 @@
 package org.example.buisness.ui.pages;
 
 import org.apache.log4j.Logger;
-import org.example.buisness.ui.webdriver.Browser;
 import org.openqa.selenium.WebDriver;
 
-public abstract class Page {
-    private final Logger logger = Logger.getLogger(this.getClass().getName());
-    private final WebDriver webDriver;
-    private boolean isUserLoggedIn;
+public interface Page {
 
-    public Page() {
-        this.webDriver = Browser.getDriver();
-        logger.trace("Init elements of the page");
-    }
+    WebDriver getWebDriver();
 
-    public WebDriver getWebDriver() {
-        return webDriver;
-    }
+    boolean isDisplayed();
 
-    public abstract boolean isDisplayed();
+    void openPage();
 
-    public abstract void openPage();
+    boolean isUserLoggedIn();
 
-    public boolean isUserLoggedIn() {
-        return isUserLoggedIn;
-    }
+    void setUserLoggedIn(boolean userLoggedIn);
 
-    public void setUserLoggedIn(boolean userLoggedIn) {
-        isUserLoggedIn = userLoggedIn;
-    }
+    Logger getLogger();
 
-    public Logger getLogger() {
-        return logger;
-    }
 }

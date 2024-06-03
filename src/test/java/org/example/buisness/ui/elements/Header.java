@@ -7,15 +7,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import static org.example.buisness.ui.pages.LoginPage.LOGIN_PAGE_LOCATOR;
+import static org.example.buisness.ui.pages.impl.desktop.LoginPageDesktopImpl.LOGIN_PAGE_LOCATOR;
 
 public class Header extends Element {
     public static final By HEADER_LOGGED_IN_LOCATOR = By.xpath("//*[contains(text(),'Howdy, ')]");
     public static final By HEADER_LOG_OUT_BUTTON_LOCATOR = By.xpath("//li/a[contains(text(),'Log Out')]");
+    public static final By LOGGED_USER_DISPLAY_NAME_LOCATOR = By.xpath("//span[@class='display-name']");
+
     private final WebDriver webDriver;
+
     public Header() {
         this.webDriver = Browser.getDriver();
     }
+
     public void logOut() {
         getLogger().debug("Wait for the user profile icon is displayed");
         WaitUtil.waitUntilElementVisible(HEADER_LOGGED_IN_LOCATOR);
@@ -29,5 +33,12 @@ public class Header extends Element {
         logOutButton.click();
         getLogger().debug("Wait for the login page is opened");
         WaitUtil.waitUntilElementVisible(LOGIN_PAGE_LOCATOR);
+    }
+
+    public String getLoggedUserDisplayName() {
+        getLogger().debug("Wait for the profile info to load");
+        WaitUtil.waitUntilElementVisible(LOGGED_USER_DISPLAY_NAME_LOCATOR);
+        WebElement displayName = Browser.getDriver().findElement(LOGGED_USER_DISPLAY_NAME_LOCATOR);
+        return displayName.getText();
     }
 }

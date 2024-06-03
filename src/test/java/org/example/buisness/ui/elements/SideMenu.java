@@ -36,4 +36,10 @@ public class SideMenu extends Element {
         getLogger().info("Clicking on the " + sectionName.getValue() + " button");
         sectionOpenButton.click();
     }
+
+    public boolean isMenuDisplayed(SideMenuSectionsEnum sideMenuSectionsEnum) {
+        By locator = By.xpath(String.format(SIDE_MENU_SECTION_PATTERN, sideMenuSectionsEnum.getValue()));
+        WaitUtil.waitUntilElementVisible(locator);
+        return Browser.getDriver().findElements(locator).size() == 1;
+    }
 }

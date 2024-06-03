@@ -70,6 +70,12 @@
             <version>1.9.21</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>

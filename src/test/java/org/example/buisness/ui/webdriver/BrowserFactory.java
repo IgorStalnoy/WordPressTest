@@ -1,5 +1,6 @@
 package org.example.buisness.ui.webdriver;
 
+import lombok.Getter;
 import org.example.buisness.ui.utils.Configuration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,14 +11,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.HashMap;
 import java.util.Map;
 
+@Getter
 public class BrowserFactory {
-    public static WebDriver createDriver(BrowserTypeEnum browserType) {
+    private DevicesEnum device;
+    private BrowserTypeEnum browserType;
+
+    public WebDriver createDriver(BrowserTypeEnum browserType) {
         WebDriver webDriver;
         Configuration.initProperties();
         switch (browserType) {
             case CHROME:
                 ChromeOptions chromeOptions = new ChromeOptions();
-                if (getDevice().equals(DevicesEnum.MOBILE)) {
+                if (initDevice().equals(DevicesEnum.MOBILE)) {
                     chromeOptions.setExperimentalOption("mobileEmulation", getMobileEmulationPrefs());
                 }
                 webDriver = new ChromeDriver(chromeOptions);
@@ -33,17 +38,29 @@ public class BrowserFactory {
         }
         return webDriver;
     }
-    private static Map<String, Object> getMobileEmulationPrefs() {
+
+    private Map<String, Object> getMobileEmulationPrefs() {
         Map<String, Object> mobileEmulation = new HashMap<>();
         mobileEmulation.put("deviceName", "iPhone 14 Pro Max");
         return mobileEmulation;
     }
 
-    private static DevicesEnum getDevice() {
+    private DevicesEnum initDevice() {
         if (System.getProperty("device") == null) {
-            return DevicesEnum.valueOf(Configuration.getProperties().getProperty("device"));
+            device = getDeviceFromConfiguration();
+            return getDeviceFromConfiguration();
         } else {
-            return DevicesEnum.valueOf(System.getProperty("device").toUpperCase());
+            device = getDeviceFromSystem();
+            return getDeviceFromSystem();
         }
     }
+
+    private DevicesEnum getDeviceFromConfiguration() {
+        return DevicesEnum.valueOf(Configuration.getProperties().getProperty("device"));
+    }
+
+    private DevicesEnum getDeviceFromSystem() {
+        return DevicesEnum.valueOf(System.getProperties().getProperty("device"));
+    }
+
 }

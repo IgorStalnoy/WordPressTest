@@ -1,20 +1,21 @@
-package org.example.buisness.ui.pages;
+package org.example.buisness.ui.pages.impl.desktop;
 
 import org.example.buisness.ui.elements.Header;
 import org.example.buisness.ui.elements.SideMenu;
 
-public abstract class AdminPage extends Page {
+public abstract class AdminPageDesktopImpl extends PageDesktopImpl {
+
 
     private Header header;
     private SideMenu sideMenu;
 
-    public AdminPage(Header header, SideMenu sideMenu) {
+    public AdminPageDesktopImpl(Header header, SideMenu sideMenu) {
         super();
         this.header = header;
         this.sideMenu = sideMenu;
     }
 
-    public AdminPage() {
+    public AdminPageDesktopImpl() {
     }
 
     public Header header() {
@@ -37,4 +38,9 @@ public abstract class AdminPage extends Page {
     public void setSideMenu(SideMenu sideMenu) {
         this.sideMenu = sideMenu;
     }
+
+    public boolean isProfileDataEqualsUsersData(String firstName, String lastName) {
+        return header.getLoggedUserDisplayName().equals(firstName + " " + lastName);
+    }
+
 }
