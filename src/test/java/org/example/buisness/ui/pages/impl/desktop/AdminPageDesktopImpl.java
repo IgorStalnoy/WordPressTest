@@ -5,6 +5,7 @@ import org.example.buisness.ui.elements.SideMenu;
 
 public abstract class AdminPageDesktopImpl extends PageDesktopImpl {
 
+
     private Header header;
     private SideMenu sideMenu;
 
@@ -37,4 +38,9 @@ public abstract class AdminPageDesktopImpl extends PageDesktopImpl {
     public void setSideMenu(SideMenu sideMenu) {
         this.sideMenu = sideMenu;
     }
+
+    public boolean isProfileDataEqualsUsersData(String firstName, String lastName) {
+        return header.getLoggedUserDisplayName().equals(firstName + " " + lastName);
+    }
+
 }

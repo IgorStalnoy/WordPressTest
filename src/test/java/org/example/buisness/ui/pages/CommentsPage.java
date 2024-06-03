@@ -13,4 +13,5 @@ public interface CommentsPage extends Page {
     WebElement getLastTableElement();
 
     List<WebElement> getTableElementsByPostTitle(String titleName);
+    boolean isMenuDisplayedOnSideMenu();
 }

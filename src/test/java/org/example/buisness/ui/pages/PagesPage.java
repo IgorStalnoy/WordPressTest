@@ -12,4 +12,5 @@ public interface PagesPage extends Page {
     WebElement getLastTableElement();
 
     List<WebElement> getTableElementsByTitle(String titleName);
+    boolean isMenuDisplayedOnSideMenu();
 }

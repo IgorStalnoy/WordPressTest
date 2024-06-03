@@ -34,5 +34,10 @@ public class DashboardPageDesktopImpl extends AdminPageDesktopImpl implements Da
         return sideMenu().isCurrentPageEqualsHighlightedOnSideMenu(SIDE_MENU_ELEMENT);
     }
 
+    @Override
+    public boolean isMenuDisplayedOnSideMenu() {
+        return sideMenu().isMenuDisplayed(SIDE_MENU_ELEMENT);
+    }
+
 
 }

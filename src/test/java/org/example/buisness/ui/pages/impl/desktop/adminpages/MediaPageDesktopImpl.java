@@ -33,23 +33,32 @@ public class MediaPageDesktopImpl extends AdminPageDesktopImpl implements MediaP
         getLogger().info("Opening page " + SIDE_MENU_ELEMENT.getValue());
         sideMenu().openPage(SIDE_MENU_ELEMENT);
     }
+
     @Override
     public boolean isPageEqualsHighlightedOnSideMenu() {
         return sideMenu().isCurrentPageEqualsHighlightedOnSideMenu(SIDE_MENU_ELEMENT);
     }
+
     @Override
     public List<WebElement> getTableElementsList() {
         getLogger().info("Get " + this.getClass().getSimpleName() + " table elements");
         return getWebDriver().findElements(MEDIA_TABLE_ELEMENTS_LIST_LOCATOR);
     }
+
     @Override
     public WebElement getLastTableElement() {
         getLogger().info("Get " + this.getClass().getSimpleName() + " table last element");
         return getTableElementsList().get(0);
     }
+
     @Override
     public List<WebElement> getTableElementsByTitle(String titleName) {
         getLogger().info("Get " + this.getClass().getSimpleName() + " table elements by title");
         return getWebDriver().findElements(By.xpath(String.format(MEDIA_TABLE_ELEMENTS_BY_TITLE_PATTERN, titleName)));
+    }
+
+    @Override
+    public boolean isMenuDisplayedOnSideMenu() {
+        return sideMenu().isMenuDisplayed(SIDE_MENU_ELEMENT);
     }
 }
