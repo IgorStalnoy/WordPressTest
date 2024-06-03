@@ -1,5 +1,8 @@
 package org.example.tests.ui;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.example.buisness.ui.entities.User;
 import org.example.buisness.ui.entities.UsersRolesEnum;
 import org.example.buisness.ui.utils.Configuration;
@@ -16,7 +19,9 @@ public class UserRegistrationTest extends BaseTest {
     public static final String SUBSCRIBER_PASSWORD = Configuration.getProperties().getProperty("subscriberpassword");
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Order(1)
+    @Description("Test verifies user with contributor role can register")
     public void testRegisterNewContributorUser() {
         loginPage.loginByAdmin();
         usersPage.openPage();
@@ -37,7 +42,9 @@ public class UserRegistrationTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Order(2)
+    @Description("Test verifies user with editor role can register")
     public void testRegisterNewEditorUser() {
         loginPage.loginByAdmin();
         usersPage.openPage();
@@ -58,7 +65,9 @@ public class UserRegistrationTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Order(3)
+    @Description("Test verifies user with subscriber role can register")
     public void testRegisterNewSubscriberUser() {
         loginPage.loginByAdmin();
         usersPage.openPage();
@@ -79,7 +88,9 @@ public class UserRegistrationTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Order(4)
+    @Description("Test verifies user with contributor role view pages suitable with his permissions")
     public void testContributorUserPermissions() {
         loginPage.openPage();
         loginPage.logInWithCredentials(CONTRIBUTOR_USERNAME, CONTRIBUTOR_PASSWORD);
@@ -94,7 +105,9 @@ public class UserRegistrationTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Order(5)
+    @Description("Test verifies user with editor role view pages suitable with his permissions")
     public void testEditorUserPermissions() {
         loginPage.openPage();
         loginPage.logInWithCredentials(EDITOR_USERNAME, EDITOR_PASSWORD);
@@ -109,7 +122,9 @@ public class UserRegistrationTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Order(6)
+    @Description("Test verifies user with subscriber role view pages suitable with his permissions")
     public void testSubscriberUserPermissions() {
         loginPage.openPage();
         loginPage.logInWithCredentials(SUBSCRIBER_USERNAME, SUBSCRIBER_PASSWORD);
