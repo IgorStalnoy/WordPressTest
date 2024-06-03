@@ -1,5 +1,8 @@
 package org.example.tests.ui;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -17,6 +20,8 @@ public class PostsTest extends BaseTest {
 
     @Test
     @Order(1)
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Test verifies post can be added")
     public void testPostCanBeAdded() {
         postsPage.openPage();
         postsPage.clickOnAddNewButton();
@@ -31,6 +36,8 @@ public class PostsTest extends BaseTest {
 
     @Test
     @Order(2)
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Test verifies post can be updated")
     public void testPostCanBeUpdated() {
         postsPage.openPage();
         postsPage.openPostEditingPage(NEW_POST_TITLE_TEXT);
@@ -45,6 +52,8 @@ public class PostsTest extends BaseTest {
 
     @Test
     @Order(3)
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Test verifies post can be deleted")
     public void testPostCanBeDeleted() {
         postsPage.openPage();
         postsPage.openPostEditingPage(UPDATED_POST_TITLE_TEXT);

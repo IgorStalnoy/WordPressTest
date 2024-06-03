@@ -2,6 +2,8 @@ package org.example.tests.ui;
 
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -10,6 +12,7 @@ import static org.example.buisness.ui.pages.impl.desktop.LoginPageDesktopImpl.*;
 
 public class LogInTest extends BaseTest {
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Description("Test verifies the user logged in successful")
     public void testLogInWithValidCredentials() {
         loginPage.openPage();
@@ -17,6 +20,7 @@ public class LogInTest extends BaseTest {
         Assertions.assertTrue(loginPage.isUserLoggedInSuccessful(), "User was not logged in after login with valid credentials");
     }
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Description("Failed test")
     public void failedTest() {
         loginPage.openPage();
@@ -24,6 +28,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Description("Test verifies login page remains after login with invalid credentials")
     public void testLogInWithInvalidCredentials() {
         loginPage.openPage();
@@ -32,6 +37,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Description("Test verifies the error massage appeared opened after login with invalid credentials")
     public void testCheckForErrorMessageLogInWithInvalidCredentials() {
         loginPage.openPage();
@@ -40,6 +46,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Description("Test verifies the dashboard page opened after login")
     public void testUserRedirectedOnDashboardAfterLogIn() {
         loginPage.openPage();
@@ -48,6 +55,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Description("Test verifies the dashboard page highlighted on side menu after login")
     public void testDashboardPageHighlightedOnSideMenuAfterLogIn() {
         loginPage.openPage();
@@ -56,6 +64,7 @@ public class LogInTest extends BaseTest {
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
     @Description("Test verifies the login page opened after user logout")
     public void testLoginPageDisplayedAfterLogout() {
         loginPage.openPage();
